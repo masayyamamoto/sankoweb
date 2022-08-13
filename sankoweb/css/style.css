@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+h1,p,img {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color:inherit;
+  margin-left: 18px;
+}
+a:hover{
+  opacity: 0.5;
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width:800px;
+  width:calc(100% - 32px);
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: center;
+}
+.header_section {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  padding: 20px;
+  vertical-align: center;
+}
+.logo {
+  display: flex;
+  vertical-align: center;
+}
+.logo img {
+  width:auto;
+  height:30px;
+  margin-right:6px;
+}
+.logo h1 {
+  font-weight:normal;
+  font-size: 18px;
+}
+nav {
+  margin-top: 6px;
+  font-size: 14px;
+}
+.topimage {
+  width: 100%;
+}
+
+/* ヘッダー・メイン */
+
+main {
+  margin-top: 60px;
+}
+main .container section{
+  display: flex; 
+  margin-top: 40px;
+  text-align: left;
+}
+section img {
+  width: 40%;
+}
+.barcode {
+  flex-direction:row-reverse;
+}
+.barcode img {
+  margin-left: 24px;
+}
+.tagname img {
+  margin-right: 24px;
+}
+h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* メイン・アクセス */
+
+.ask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  border-top: 2px solid #eee;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+}
+.map {
+  margin-right: 40px;
+}
+.toiawase div + div {
+  margin-top:20px;
+}
+.ask h2 {
+  font-size: 16px;
+}
+
+
+i {
+  margin: 10px;
+}
+footer small {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 24px;
+}
+footer {
+  margin-top: 100px;
+  padding: 30px 0;
+  background-color: #eee;
+}
+
+@media screen and (max-width:768px),print {
+  
+  .header_section {
+    /* outline: 1px solid red; */
+    display: block;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+  }
+  nav a:first-child {
+    margin-left: 0;
+  }
+
+  main .container section{
+    display: block; 
+    margin-top: 10px;
+  }
+
+  .tagname img {
+    width:80%;
+    margin: 0 auto;
+    }
+  .barcode img {
+    width:80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .ask {
+    /* outline: 1px solid red; */
+    display: block;
+    padding-top: 20px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .footer {
+    padding: 20px 0;
+  }
+
+}
